@@ -1,0 +1,221 @@
+
+/* couleur pour le core */
+.xoopscore-color {
+color : #139EE8  ;
+}
+.xoopscore-border {
+border-color : #139EE8  ;
+border-style : solid;
+border-width : thin;
+}	
+.xoopscore-bg {
+background-color: #139EE8   ;
+}
+#card-core:hover {
+background-color: #71c6f4;
+color:	#FFFFFF;
+}
+
+/* couleur pour les modules */	
+.xoopsmodules-color {
+color :  #747B9B
+}
+
+.xoopsmodules-border {
+border-color : #747B9B;
+border-style : solid;
+border-width : thin;
+}	
+.xoopsmodules-bg {
+background-color: /*#1D34A7;/*#7e89ff #9999ff;*/#747B9B; 
+}	
+#card-modules:hover {
+background-color: #898fa9;
+color: #FFFFFF;
+}
+
+
+/* couleur pour les themes */
+.xoopsthemes-color {
+color : darkseagreen;
+
+}
+.xoopsthemes-border {
+border-color : darkseagreen  ;
+border-style : solid;
+border-width : thin;
+}	
+.xoopsthemes-bg {
+background-color: darkseagreen   ;/*#A9D1B0*/
+}	
+#card-themes:hover {
+background-color: #afcfaf;
+color:	#ffffff;
+}
+
+/* couleur pour les élements du core niveau 2 */
+.xoopscore2-color {
+color : #87a5c7   ;
+}
+.xoopscore2-border {
+border-color : #87a5c7   ;
+border-style : solid;
+border-width : thin;
+}	
+.xoopscore2-bg {
+background-color: #87a5c7    ;
+}	
+
+/* couleur pour la partie Backoffice*/
+.xoopsbackoffice-color {
+color : #A64140 /*A95B5B /*ff6666 */ ;
+}
+.xoopsbackoffice-border {
+border-color : #A64140   ;
+border-style : solid;
+border-width : thin;
+}	
+.xoopsbackoffice-bg {
+background-color: #A64140    ;
+}	
+
+.xoopsweb-color {
+color : LightSteelBlue   ;
+}
+
+.xoopsweb-border {
+border-color : LightSteelBlue   ;
+border-style : solid;
+border-width : thin;
+}	
+.xoopsweb-bg {
+background-color: LightSteelBlue;
+}	
+
+/* couleur offciel pour le logo open-source */
+.osilogo-color {
+color : #3fa648  ;
+}
+/* couleur offciel pour le logo PHP */
+.phplogo-color{
+color : #8993BE  ;
+}
+
+.dropdown:hover .dropdown-menu  {
+	display: block;
+	margin-top: 0;
+}
+
+.color-core-blanc {
+color : #139EE8;
+}
+
+.color-core-blanc:hover, .color-modules-blanc:hover, .color-themes-blanc:hover {
+color : #ffffff;
+}
+
+.color-modules-blanc {
+color : #747B9B;
+}
+
+.color-themes-blanc {
+color : darkseagreen;
+}
+
+.label-xoops {
+color : #139EE8;
+font-weight: bold;
+}
+
+.label-groupe {
+color : #87a5c7;
+font-style : italic;
+}
+
+.label-module {
+color : #747B9B;
+font-weight : bold;
+}
+
+.label-theme {
+color : darkseagreen;
+font-weight : bold;
+}
+
+/* animation */
+/* https://github.com/daneden/animate.css */
+/* https://daneden.github.io/animate.css/ */
+
+.anim-baguette
+ {
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+.anim-gears
+ {
+  animation: rollIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1; /*infinite;*/
+  animation-delay: 2s;
+}
+
+.anim-windows
+ {
+  animation: swing; 
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+}
+
+.larg-btn
+{
+	width: 78px;
+}
+
+.larg-xs-btn
+{
+	width: 45px;
+}
+
+.jumbotron-xoops
+{
+/*	background-color: #1C1E22 */
+	background-color: #FF88CC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
