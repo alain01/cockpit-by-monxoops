@@ -24,94 +24,104 @@
 			<!-- Main row -->
 			<div class="row">
 				<!-- Left col -->
-				<section class="col-lg-7 connectedSortable">
-
-					<!-- XOOPS Page -->
-					<!-- Si on enlève direct-chat on n'a plus la fenêtre d'aide qui s'ouvre depuis la droite vers la gauche -->
-					<div class="card direct-chat">
-						<div class="card-header">
-							<h3 class="card-title">Page XOOPS demandée</h3>
-							<div class="card-tools">
-								<button type="button" class="btn btn-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fas fa-question-circle"></i></button>
-								<button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+				
+				<{if ($moddir) && ($moddir != 'system')}>
+					<section class="col-lg-12 connectedSortable">
+						<!-- XOOPS Module Pages -->
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title">Page XOOPS demandée</h3>
+								<div class="card-tools">
+									<button type="button" class="btn btn-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fas fa-question-circle"></i></button>
+									<button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+								</div>
 							</div>
-						</div>
-						<!-- /.card-header -->
-						<div class="card-body">
-						
-							<!-- Conversations are loaded here -->
-							<{includeq file="$theme_tpl/xo_page.tpl" }>
-							<!--/.direct-chat-messages-->
+							<!-- /.card-header -->
 
-							<!-- Contacts are loaded here -->
-							<div class="direct-chat-contacts p-2">
-								A venir  : Aide contextuelle
+							<div class="card-body">
+								<{includeq file="$theme_tpl/xo_page.tpl" }>
 							</div>
-							<!-- /.direct-chat-pane -->
+							<!-- /.card-body -->
 
 						</div>
-						<!-- /.card-body -->
-<!--			  
-						<div class="card-footer">
+						<!--/.XOOPS Module Pages -->
+					</section>
+					<!-- full col -->
+					
+				<{else}>
+					<section class="col-lg-7 connectedSortable">
+
+						<!-- XOOPS Page -->
+						<!-- Si on enlève direct-chat on n'a plus la fenêtre d'aide qui s'ouvre depuis la droite vers la gauche -->
+						<div class="card direct-chat">
+							<div class="card-header">
+								<h3 class="card-title">Page XOOPS demandée</h3>
+								<div class="card-tools">
+									<button type="button" class="btn btn-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fas fa-question-circle"></i></button>
+									<button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+								</div>
+							</div>
+							<!-- /.card-header -->
+							<div class="card-body">
+								<{includeq file="$theme_tpl/xo_page.tpl" }>
+
+								<!-- Contextuel Help section here -->
+								<div class="direct-chat-contacts p-2">
+									A venir  : Aide contextuelle
+								</div>
+								<!-- /.Contextuel Help section -->
+
+							</div>
+							<!-- /.card-body -->
+
 						</div>
--->
-						<!-- /.card-footer-->
-
-					</div>
-					<!--/.direct-chat -->
-
-				</section>
-				<!-- /.Left col -->
-
+						<!--/.XOOPS Page -->
+					</section>
+					<!-- /.Left col -->
           
-				<!-- right col (We are only adding the ID to make the widgets sortable)-->
-				<section class="col-lg-5 connectedSortable">
+					<!-- right col (We are only adding the ID to make the widgets sortable)-->
+					<section class="col-lg-5 connectedSortable">
 
-
-					<div class="card">
-						<div class="card-header">
-							<h3 class="card-title">Divers</h3>
-							<div class="card-tools">
-								<button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
-								<button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title">Divers</h3>
+								<div class="card-tools">
+									<button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+									<button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+								</div>
 							</div>
-						</div>
-						<!-- /.card-header -->
-					  
-						<div class="card-body">
-								<{includeq file="$theme_tpl/xo_tabs.tpl" }>
-							<!--/.direct-chat-messages-->
-						</div>
-						<!-- /.card-body -->
-
-					</div>
-					<!--/.direct-chat -->
-
-
-
-					<div class="card">
-						<div class="card-header">
-							<h3 class="card-title"><{$smarty.const._MD_CPANEL_OVERVIEW}></h3>
-							<div class="card-tools">
-								<button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
-								<button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+							<!-- /.card-header -->
+						  
+							<div class="card-body">
+									<{includeq file="$theme_tpl/xo_tabs.tpl" }>
 							</div>
+							<!-- /.card-body -->
 						</div>
-						<!-- /.card-header -->
-					  
-						<div class="card-body">
-								<{includeq file="$theme_tpl/xo_accordion.tpl" }>
-							<!--/.direct-chat-messages-->
+						<!-- /.card -->
+
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title"><{$smarty.const._MD_CPANEL_OVERVIEW}></h3>
+								<div class="card-tools">
+									<button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+									<button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+							<!-- /.card-header -->
+						  
+							<div class="card-body">
+									<{includeq file="$theme_tpl/xo_accordion.tpl" }>
+							</div>
+							<!-- /.card-body -->
+
 						</div>
-						<!-- /.card-body -->
+						<!--/.card -->
 
-					</div>
-					<!--/.direct-chat -->
-
-				</section>
-				<!-- right col -->
+					</section>
+					<!-- right col -->
+				<{/if}>
 			</div>
-        <!-- /.row (main row) -->
+			<!-- /.row (main row) -->
 		</div><!-- /.container-fluid -->
 	</section>
 	<!-- /.content -->
