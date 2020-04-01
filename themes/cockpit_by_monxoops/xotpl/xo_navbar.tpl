@@ -162,16 +162,16 @@
 	</ul>
 
 	<!-- SEARCH FORM -->
-	<form class="form-inline d-none d-md-block ml-0">
+	<form class="form-inline d-none d-md-block ml-0" role="search" action="<{xoAppUrl search.php}>" method="get">
 		<div class="input-group input-group-sm">
-			<input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+			<input class="form-control form-control-navbar" type="search" name="query" placeholder="Search" aria-label="Search">
 			<div class="input-group-append">
-				<button class="btn btn-navbar" type="submit">
-				<i class="fas fa-search"></i>
-			</button>
+				<input type="hidden" name="action" value="results">
+				<button class="btn btn-navbar" type="submit"><span class="fas fa-search"></span></button>
 			</div>
 		</div>
 	</form>
+	<!-- SEARCH FORM -->
 
 	<!-- Right navbar links -->
 	<ul class="navbar-nav ml-auto">
